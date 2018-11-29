@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
+<link href='../static/css/final_page.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1>PhotoVoltaic Research Laboratory</h1>
+        <a class="btn" href="#">Learn More</a>
+      </div>
+    </div>
+
+    <div class="nav">
+      <div class="container">
+        <ul>
+          <li>Home</li>
+          <li>Profile</li>
+          <li>Download</li>
+          <li>Visualize</li>
+          <li>About Us</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="container">
+        <img src="../static/images/upload-icon.png" height="128" width="196">
+        <p class="successfull">Files uploaded successfully!!</p>
+        <p class="successfull">Want to upload more files, GO Ahead!!</p>
+        <h2>Upload Files</h2>
+        <p>Upload the weekly data files</p>
+        <form action="/pvrl/upload-file" method="POST" enctype="multipart/form-data">{% csrf_token %}
+        <label class="file-upload">
+        <input type="file" name="file" accept="csv/">
+        </label>
+        <br>
+        <button type="submit" class="upload">Upload</button>
+        <button type="submit" class="cancel">cancel</button>
+      </form>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h2>Join the innovation hub at ASU</h2>
+        <a class="btn" href="#">Join</a>
+      </div>
+    </div>
+    <div id="innovation-bar">
+      <div class="innovation-top">
+        <div class="innovation-status">
+            <a href="https://www.asu.edu/rankings">
+              <span>ASU is #1 in the U.S. for Innovation</span>
+            </a>
+        </div>
+        <div class="innovation-hidden">
+            <a href="https://www.asu.edu/rankings">
+            <img src="../static/images/best-colleges-most-innovative.png">
+          </a>
+          </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <p>&copy; Arizona State University</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,243 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 940px; 
+    padding: 0 10px;
+  }
+  
+.header {
+    background: url(../images/solar-panel1.jpg) no-repeat center center; 
+    background-size: cover;
+    height: 450px;
+    text-align: center;
+  }
+  
+  .header .container {
+    position: relative;
+    top: 120px; 
+  }
+
+  .header h1 {
+    color: white;
+    line-height: 80px; 
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    text-shadow: 2px 4px skyblue; 
+  }
+
+  @media (min-width:850px) {
+    .header h1 {
+      font-size: 60px;
+    }
+  }
+
+  .header p {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    text-transform: uppercase; 
+  }
+
+  .btn {
+    color: #fff;
+    background: #000;
+    padding: 10px 40px;
+    text-decoration: none; 
+    transition: background .5s;
+  }
+
+  .nav { 
+    background: #000;
+    height: 80px; 
+    width: 100%;
+  }
+
+  .nav ul {
+    height: 80px;
+    list-style: none;
+    margin: 0 auto; 
+    padding: 0;
+  }
+
+  .nav ul li {
+    color: #fff;
+    display: inline-block; 
+    height: 80px;
+    line-height: 80px; 
+    list-style: none;
+    padding: 0 10px;
+    transition: background 0.5s; 
+  }
+
+  .btn:hover, .nav ul li:hover {
+    background: #117bff;
+    cursor: pointer; 
+    transition: background 0.5s;  
+  }
+
+  .main .container {
+    margin: 80px auto;
+  }
+
+  .main img {
+    float: left;
+    margin: 0 80px 0 0;
+    height: 180px;
+  }
+
+  .jumbotron {
+    background: url(../images/asu_old_main.jpg) center center;
+    background-size: cover;
+    height: 400px; 
+  }
+
+  .jumbotron .container {
+    position: relative;
+    top: 220px;
+  }
+
+  .jumbotron h2 {
+    color: #fff;
+    text-align: right; 
+  }
+
+  .jumbotron p {
+    color: #fff; 
+    text-align: right; 
+  }
+
+  .jumbotron .btn {
+    margin: 10px 0 0;
+    float: right; 
+  }
+
+  .footer { 
+    background: #000;
+    height: 30px; 
+    padding-bottom: 50px;
+  }
+
+  .footer p { 
+    color: #fff;
+    font-size: 14px;  
+    height: 80px; 
+    line-height: 80px;
+    margin: 0;  
+  }
+
+  @media (max-width: 500px) {
+    .header h1 {
+      font-size: 50px;
+      line-height: 64px;
+    }
+  
+    .main, .jumbotron {
+        padding: 0 30px;
+      }
+    
+      .main img {
+        width: 100%;
+      }
+  }
+  
+  .upload{
+    margin:20px 0;
+  }
+
+  .cancel{
+    margin:20px;
+  }
+
+  button{
+    background-color: white;
+    border: 2px solid grey;
+    border-radius: 8px;
+    padding: 12px 28px;
+    color: grey;
+  }
+
+  button:hover{
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24),0 5px 5px 0 rgba(0,0,0,0.19);
+  }
+
+  button:active {
+    box-shadow: 0 5px white;
+    transform: translateY(4px);
+  }
+
+  #innovation-bar{
+    display: block;
+    background-color: #FFC627;
+    font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+
+  #innovation-bar .innovation-top {
+    margin: 0 auto;
+  }
+
+  #innovation-bar .innovation-status {
+    text-align: right;
+    width: 85%;
+    display: inline-block;
+    margin-bottom: .7em;
+    margin-top: .7em;
+  }
+
+  #innovation-bar a {
+    border-bottom: 0;
+    color: black;
+    font-size: x-large;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#innovation-bar img {
+  margin-top: -3em;
+  height: 121px;
+  float:right;
+  margin-right: 60px;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  border: 0;
+    border-top-color: initial;
+    border-top-style: initial;
+    border-top-width: 0px;
+    border-right-color: initial;
+    border-right-style: initial;
+    border-right-width: 0px;
+    border-bottom-color: initial;
+    border-bottom-style: initial;
+    border-bottom-width: 0px;
+    border-left-color: initial;
+    border-left-style: initial;
+    border-left-width: 0px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+
+.successfull{
+  color: Green;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
